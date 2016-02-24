@@ -3,7 +3,7 @@ require 'xcodeproj'
 module Pod
 
   class ProjectManipulator
-    attr_reader :configurator, :xcodeproj_path, :platform, :remove_demo_target, :string_replacements, :prefix
+    attr_reader :configurator, :xcodeproj_path, :platform, :remove_demo_target, :string_replacements, :prefix, :organization
 
     def self.perform(options)
       new(options).perform
@@ -15,6 +15,7 @@ module Pod
       @platform = options.fetch(:platform)
       @remove_demo_target = options.fetch(:remove_demo_project)
       @prefix = options.fetch(:prefix)
+      @organization = options.fetch(:organization)
     end
 
     def run
@@ -24,7 +25,7 @@ module Pod
         "TODAYS_YEAR" => @configurator.year,
         "PROJECT" => @configurator.pod_name,
         "CPD" => @prefix,
-        "ORGANIZATION" => @configurator.organization,
+        "ORGANIZATION" => @organization,
       }
       replace_internal_project_settings
 

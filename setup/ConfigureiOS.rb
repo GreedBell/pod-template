@@ -52,10 +52,10 @@ module Pod
           end
       end
 
-      prefix = "GR"
+      prefix =
 
       loop do
-        prefix = configurator.ask("What is your class prefix ? default is GR")
+        prefix = configurator.ask("What is your class prefix")
 
         if prefix.include?(' ')
           puts 'Your class prefix cannot contain spaces.'.red
@@ -64,13 +64,13 @@ module Pod
         end
       end
 
-      organization = "greedlab"
+      organization =
 
       loop do
-          organization = configurator.ask("What is your organization ? default is greedlab")
+          organization = configurator.ask("What is your organization")
 
-          if prefix.include?(' ')
-              puts 'Your class prefix cannot contain spaces.'.red
+          if organization.include?(' ')
+              puts 'Your class organization cannot contain spaces.'.red
               else
               break
           end
