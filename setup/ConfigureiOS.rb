@@ -52,7 +52,7 @@ module Pod
           end
       end
 
-      prefix =
+      prefix = nil
 
       loop do
         prefix = configurator.ask("What is your class prefix")
@@ -64,7 +64,7 @@ module Pod
         end
       end
 
-      organization =
+      organization = nil
 
       loop do
           organization = configurator.ask("What is your organization")
