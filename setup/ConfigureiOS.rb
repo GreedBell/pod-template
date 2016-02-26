@@ -82,7 +82,7 @@ module Pod
         :platform => :ios,
         :remove_demo_project => (keep_demo == :no),
         :prefix => prefix,
-        :organization => organization
+        :pod_organization => organization
       }).run
 
       # There has to be a single file in the Classes dir

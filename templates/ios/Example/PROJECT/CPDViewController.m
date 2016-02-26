@@ -3,7 +3,7 @@
 //  PROJECT
 //
 //  Created by PROJECT_OWNER on TODAYS_DATE.
-//  Copyright (c) TODAYS_YEAR ORGANIZATION. All rights reserved.
+//  Copyright (c) TODAYS_YEAR POD_ORGANIZATION. All rights reserved.
 //
 
 #import "CPDViewController.h"
