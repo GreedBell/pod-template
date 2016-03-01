@@ -10,6 +10,12 @@ An opinionated template for creating a Pod with the following features:
 - Testing as a standard
 - Turnkey access to Travis CI
 
+## usage
+
+```shell
+$ pod lib create NAME --template-url= https://github.com/GreedBell/pod-template
+```
+
 ## Getting started
 
 There are two reasons for wanting to work on this template, making your own or improving the one for everyone's. In both cases you will want to work with the ruby classes inside the `setup` folder, and the example base template that it works on from inside `template/ios/`. 
