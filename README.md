@@ -13,7 +13,7 @@ An opinionated template for creating a Pod with the following features:
 ## usage
 
 ```shell
-$ pod lib create NAME --template-url= https://github.com/GreedBell/pod-template
+$ pod lib create NAME --template-url = git@github.com:GreedBell/pod-template.git
 ```
 
 ## Getting started
