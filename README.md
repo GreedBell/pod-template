@@ -1,5 +1,4 @@
-pod-template
-============
+# pod-template
 
 An opinionated template for creating a Pod with the following features:
 
@@ -29,8 +28,3 @@ It is open to communal input, but adding new features, or new ideas are probably
 ## Requirements:
 
 - CocoaPods 0.31
-
-
-## Todo
-
-auto modify organization in project
